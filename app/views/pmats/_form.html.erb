@@ -1,0 +1,29 @@
+<%= form_for(@pmat) do |f| %>
+  <% if @pmat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pmat.errors.count, "error") %> prohibited this pmat from being saved:</h2>
+
+      <ul>
+      <% @pmat.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :head %><br />
+    <%= f.text_field :head %>
+  </div>
+  <div class="field">
+    <%= f.label :meaning %><br />
+    <%= f.text_field :meaning %>
+  </div>
+  <div class="field">
+    <%= f.label :usage %><br />
+    <%= f.text_area :usage %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

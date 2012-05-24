@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Head:</b>
+  <%= @pmat.head %>
+</p>
+
+<p>
+  <b>Meaning:</b>
+  <%= @pmat.meaning %>
+</p>
+
+<p>
+  <b>Usage:</b>
+  <%= @pmat.usage %>
+</p>
+
+
+<%= link_to 'Edit', edit_pmat_path(@pmat) %> |
+<%= link_to 'Back', pmats_path %>

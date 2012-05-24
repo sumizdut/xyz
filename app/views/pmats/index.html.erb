@@ -1,0 +1,27 @@
+<h1>Listing pmats</h1>
+
+<table>
+  <tr>
+    <th>Head</th>
+    <th>Meaning</th>
+    <th>Usage</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pmats.each do |pmat| %>
+  <tr>
+    <td><%= pmat.head %></td>
+    <td><%= pmat.meaning %></td>
+    <td><%= pmat.usage %></td>
+    <td><%= link_to 'Show', pmat %></td>
+    <td><%= link_to 'Edit', edit_pmat_path(pmat) %></td>
+    <td><%= link_to 'Destroy', pmat, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pmat', new_pmat_path %>

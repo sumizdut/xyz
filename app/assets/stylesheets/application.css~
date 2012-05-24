@@ -1,0 +1,155 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+body {
+		margin:0;
+		padding:0;
+		border:0;			/* This removes the border around the viewport in old versions of IE */
+		width:100%;
+		background:#fff;
+		min-width:600px;    	/* Minimum width of layout - remove line if not required */
+						/* The min-width property does not work in old versions of Internet Explorer */
+		font-size:90%;
+	}
+	table#s tbody tr.light {
+    background-color:#daefda;
+}
+
+table#s tbody tr.dark {
+    background-color: #c5d6fd;
+}
+
+table#s tbody tr:hover {
+    background-color: #edcfdc;}
+    
+	a {
+		color:#369;
+	}
+	a:hover {
+		color:#fff;
+		background:#369;
+		text-decoration:none;
+	}
+	h1, h2, h3 {
+		margin:.8em 0 .2em 0;
+		padding:0;
+	}
+	p {
+		margin:.4em 0 .8em 0;
+		padding:0;
+	}
+	img {
+		margin:10px 0 5px;
+	}
+	/* Header styles */
+	#header {
+		clear:both;
+		float:left;
+		width:100%;
+	}
+	#header {
+		border-bottom:1px solid #000;
+	}
+	#header p,
+	#header h1,
+	#header h2 {
+		padding:34px 15px 0 15px;
+		margin:0;
+	}
+	
+	/* column container */
+	.colmask {
+		clear:both;
+		float:left;
+		width:100%;			/* width of whole page */
+		overflow:hidden;		/* This chops off any overhanging divs */
+	}
+	/* common column settings */
+	.colright,
+	.colmid,
+	.colleft {
+		float:left;
+		width:100%;
+		position:relative;
+	}
+	.col1,
+	.col2,
+	.col3 {
+		float:left;
+		position:relative;
+		padding:0 0 1em 0;
+		overflow:hidden;
+	}
+	/* 2 Column (double page) settings */
+	.doublepage {
+		background:#eee;		/* right column background colour */
+	}
+	.doublepage .colleft {
+		right:50%;			/* right column width */
+		background:#fff;		/* left column background colour */
+	}
+	.doublepage .col1 {
+		width:46%;			/* left column content width (column width minus left and right padding) */
+		left:52%;			/* right column width plus left column left padding */
+	}
+	.doublepage .col2 {
+		width:46%;			/* right column content width (column width minus left and right padding) */
+		left:56%;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+	}
+	
+	/* Footer styles */
+	#footer {
+		clear:both;
+		float:left;
+		width:100%;
+		border-top:1px solid #000;
+background-color:#5f82ac;
+text-align:center;
+color:#ffffff;
+height:28px;
+width: 100%;
+}
+    #navbar {
+        overflow :hidden;
+        position: relative;
+        background: url(over.jpg) repeat-x;
+        margin: 5px 0 10px;
+    }
+    .dots{
+    	position:absolute;
+    	position:absolute; top:-6px; left:88px;float:left;
+    	background:black;
+    	}
+    ul.topnav {
+        float: left;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        left: 50%;
+    }
+    .topnav li{
+        float: left;
+        line-height: 33px;
+        position: relative;
+        right: 50%;
+    }
+    .topnav li a:link,
+    .topnav li a:visited {
+        color: #fff  ;
+        padding: 7px 4px;
+        text-decoration: none;
+        border-left: 1px solid #000000  ;
+    }
+    .topnav li a:hover, .topnav li .current{background: url(over2.jpg) repeat-x;}
+        
